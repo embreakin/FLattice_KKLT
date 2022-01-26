@@ -1,11 +1,11 @@
-# Lattice Simulation Code
-
+# FLattice_KKLT
+## Features
 This is a modified version of [FLattice](https://github.com/Axion243/FLattice) (though it seems that FLattice itself has been updated and improved in its independent path since I have started using it for my own use) which solves and simulates the evolution and interactions of scalar fields in an expanding universe for each lattice point representing a position in space. 
 
-This code solves in particular the behavior of the scalar field in the KKLT model, but of course can be used to solve other types of models as well.
-I will be adding new features (e.g. gravitational perturbations, power spectrum computation) to the code in the near future so that it will be able to compute and analyze PBH abundance for types of models that produce strong curvature perturbations (e.g. double inflation). 
+This code solves in particular the behavior of the scalar field of the KKLT model, but of course can be used to solve other types of models as well.
+The program is OpenMP parallelized, and variables are implemented in reduced Planck mass.  
 
-The most notable feature that I have added on top of the original FLattice code is the use of **quantum vacuum fluctuations** for inintial fluctuations of the scalar fields. The initial conditions are set in momentum space and then Fourier transformed to give the initial values of the fields and their derivatives at each grid point. This is a feature that is included in the well-known lattice simulation code [LatticeEasy](http://www.felderbooks.com/latticeeasy/) and more info about the feature can be found there. 
+The most notable feature that I have added in addition to the original FLattice code is the use of **quantum vacuum fluctuations** for inintial fluctuations of the scalar fields. The initial conditions are set in momentum space and then Fourier transformed to give the initial values of the fields and their derivatives at each grid point. This is a feature that is included in the well-known lattice simulation code [LatticeEasy](http://www.felderbooks.com/latticeeasy/) and more info about the feature can be found there. 
 
 ## Requirements
 The following items are required to run the code.
